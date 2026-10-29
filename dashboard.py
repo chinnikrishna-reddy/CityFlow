@@ -4,6 +4,11 @@ from pathlib import Path
 import duckdb
 import pandas as pd
 import streamlit as st
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
+from analytics import get_incidents_by_severity, get_top_cities
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "processed" / "traffic_incidents.parquet"
@@ -148,3 +153,16 @@ st.caption(
     "demonstration records and does not represent actual Indian "
     "traffic statistics."
 )
+
+st.divider()
+
+st.header("SQL Analytics")
+
+st.subheader("Incident Summary by Severity")
+severity_summary = get_incidents_by_severity()
+st.dataframe(severity_summary, width="stretch", hide_index=True)
+
+st.subheader("Top 10 Cities by Incidents")
+top_cities = get_top_cities()
+st.dataframe(top_cities, use_container_width=True, hide_index=True)
+
