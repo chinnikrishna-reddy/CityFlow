@@ -1,0 +1,2 @@
+incident_id,state,city,incident_type,severity,incident_time,vehicles_involved,rejection_reason
+IN012,Andhra Pradesh,Vijayawada,Unknown,Extreme,,,One or more validation rules failed

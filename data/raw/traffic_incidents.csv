@@ -1,0 +1,14 @@
+
+incident_id,state,city,incident_type,severity,incident_time,vehicles_involved
+IN001,Andhra Pradesh,Guntur,Collision,High,2026-10-28 08:30:00,2
+IN002,Telangana,Hyderabad,Congestion,Medium,2026-10-28 09:15:00,0
+IN003,Karnataka,Bengaluru,Collision,High,2026-10-28 10:00:00,3
+IN004,Tamil Nadu,Chennai,Road Hazard,Low,2026-10-28 11:20:00,1
+IN005,Andhra Pradesh,Vijayawada,Congestion,Medium,2026-10-28 12:00:00,0
+IN006,Andhra Pradesh,Kadapa,Collision,Low,2026-10-28 13:10:00,2
+IN007,Kerala,Kochi,Road Hazard,Medium,2026-10-28 14:25:00,1
+IN008,Telangana,Hyderabad,Collision,High,2026-10-28 15:40:00,2
+IN009,Karnataka,Bengaluru,Congestion,Medium,2026-10-28 16:00:00,0
+IN010,Andhra Pradesh,Guntur,Collision,High,2026-10-28 17:30:00,2
+IN010,Andhra Pradesh,Guntur,Collision,High,2026-10-28 17:30:00,2
+IN012,Andhra Pradesh,Vijayawada,Unknown,Extreme,invalid-date,abc
